@@ -1,0 +1,108 @@
+.Page {
+    padding: 2em;
+}
+button {
+    padding: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.main_div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 70em;
+}
+
+.card_1 {
+    margin: 1em;
+    width: 15em;
+    border: 1px solid #000000;
+    padding: 1em;
+    box-shadow: -1em -1em 0.4em rgba(94, 94, 94, 0.738);
+    border-radius: 10px;
+}
+
+.card_1_head {
+    font-size: 150%;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding-bottom: 5px;
+    margin-top: 0px;
+    padding-left: 0.5em;
+
+}
+
+.card_1_text {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.card_1_button {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.card_2 {
+    margin: 1em;
+    width: 20em;
+    border: 1px solid #000000;
+    padding: 0em;
+    box-shadow: -1em -1em 0.4em rgba(94, 94, 94, 0.738);
+}
+
+.img_1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0;
+}
+
+.card_2_head {
+    font-size: 150%;
+    padding-bottom: 5px;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    padding-left: 0.5em;
+}
+
+.card_2_text {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+}
+
+
+.card_3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid #000000;
+    box-shadow: -1em -1em 0.4em rgba(94, 94, 94, 0.738);
+    max-width: 60em;
+}
+
+.img_3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0;
+    max-width: 20em
+}
+
+.card_3_content {
+    max-width: 33em;
+    padding-left: 2em;
+    padding-right: 3em;
+}
+
+.card_3_buttom {
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
