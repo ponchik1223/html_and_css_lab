@@ -1,0 +1,140 @@
+p {
+    color: rgba(87, 91, 94, 0.711);
+    margin-bottom: 0em;
+}
+
+.input-field {
+    margin-right: 2em;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    border: 1px solid #37373749;
+}
+
+.personal-information {
+    display: flex;
+    justify-content: left;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+
+.checkbox.style-a {
+    display: inline-block;
+    position: relative;
+    padding-left: 23px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.check {
+    margin-top: 1em;
+}
+
+.checkbox.style-a input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+.checkbox.style-a input:checked~.checkbox__checkmark {
+    background-color: #fff;
+}
+
+.checkbox.style-a input:checked~.checkbox__checkmark:after {
+    opacity: 1;
+}
+
+.checkbox.style-a:hover input~.checkbox__checkmark {
+    background-color: #eee;
+}
+
+.checkbox.style-a:hover input:checked~.checkbox__checkmark {
+    background-color: #fff;
+}
+
+.checkbox.style-a .checkbox__checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 2px solid #d2cf98;
+    transition: background-color 0.25s ease;
+}
+
+.checkbox.style-a .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 6px;
+    border: solid #f96e51;
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+
+.checkbox.style-a .checkbox__body {
+    color: #333;
+    line-height: 1.4;
+    font-size: 11px;
+
+}
+
+.submit {
+    display: inline-block;
+    margin-top: 1em;
+
+}
+
+.btn-submit:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background : #fff;
+    left: -55px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .3s;
+    opacity: 0.3;
+  }
+
+.btn-submit {
+
+    background: #f8d9bd;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn-submit:hover {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+.btn-submit:hover:before {
+    left:95%;
+  }

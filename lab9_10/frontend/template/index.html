@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>lab9_10</title>
+    
+</head>
+
+<body>
+    
+    <div>
+        <h2>PERSONAL INFORMATION</h2>
+        <div class="personal-information">
+
+
+                <div class="input-field">
+                    <p>FIRST NAME*</p>
+                    <input type="text" id="first-name" >
+                </div>
+
+                <div class="input-field">
+                    <p>LAST NAME*</p>
+                    <input type="text" id="last-name" >
+                </div>
+
+                <div class="input-field">
+                    <p>EMAIL ADDRESS*</p>
+                    <input type="text" id="email" onkeyup="validation()" >
+                    <span id="text"></span>
+                </div>
+
+
+        </div>
+        <div class="check">
+            <label class="checkbox style-a">
+                <input type="checkbox" />
+                <div class="checkbox__checkmark"></div>
+                <div class="checkbox__body"><b>SIGN UP FOR NEWSLETTER</b></div>
+            </label>
+        </div>
+
+        <h2>LOGIN INFORMATION</h2>
+        <div class="personal-information">
+            <div class="input-field">
+                <p>PASSWORD*</p>
+                <input type="password" id="password">
+            </div>
+            <div class="input-field">
+                <p>CONFIRM PASSWORD*</p>
+                <input type="password" id="repeat_password" onkeyup="password_comparison()" >
+                <span id="text_confirm"></span>
+
+            </div>
+        </div>
+
+        <div class="submit" >
+            <button class="btn-submit" onclick="user_registration()">SUBMIT</button>
+        </div>
+
+        <p id="resultContainer"></p>
+        
+    </div>
+
+        
+
+
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
